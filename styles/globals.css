@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.dashboard {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+.dashboard h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.eq-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.eq-card {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 15px;
+  position: relative;
+}
+.status {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-weight: bold;
+}
+.status.green { color: #2ecc71; }
+.status.orange { color: #e67e22; }
+.status.red { color: #e74c3c; }
